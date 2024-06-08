@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jerald Han (Projects)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+        <!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="image avatar"><img src="images/avatar_face.png" alt="" /></a>
+					<h1><strong>Point Cloud Semantic Segmentation</strong></h1>
+					Projects<br />
+					<!-- responsive site template freebie<br />
+					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1> -->
+				</div>
+			</header>
+
+        <!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+							<h2>Project Description</h2>
+							<p>
+								A critical part of my journey as an AI Apprenticeship Program is my involvement in the <a href="https://aisingapore.org/innovation/100e/">100E projects</a>, where we get staffed on real industry projects in teams of three to four to help our clients build AI models to solve their business needs.
+							</p>
+							<p>
+								I was fortunate enough to be assigned to a 3D Computer Vision project that involves point cloud semantic segmentation of critical infrastructure components of the built environment. The project is currently ongoing and is scheduled to be completed by October 2024. 
+								The complexity of point cloud's spatial irregularity, as opposed to the orderly pixel grid in 2D images, makes it a challenging field to master. There is an increasing interest in models that make sense of point clouds as the use cases of LiDAR scanning technology grow.
+							</p>
+							<p>
+								Additionally, the objects that we have been tasked to identify have siginficantly more complex geometries than objects in many standard datasets used in research such as S3DIS and ScanNet. 
+								Therefore much of our work so far has been focused on finding ways to extract as much information from limited X,Y,Z,R,G,B data to boost model performance. This would go together with finding the perfect set of hyperparameters across different types of models.
+							</p>
+					</section>
+
+				<!-- Two -->
+				<section id="two">
+					<h2>Model Ecosystem</h2>
+					<p>
+						<img src="../images/fulls/pointcloud_litreview.png" alt="Models" class="image fit">
+					</p>
+					<p> Our team did an extensive literature review to understand the work that has already been done in this field, and have classified the models we have encountered into three broad categories -- Point-based, Convolutional and Transformer.
+						We are currently putting in place model pipelines for a select few models that we have identified and will be iterating through various feature engineering techniques as well as hyperparameters to produce the best results for the client.
+					</p>
+				</section>
+
+				<!-- Three -->
+				<section id="three">
+					<h2>Tech Stack</h2>
+					<p>
+						<img src="../images/fulls/pointcloud_techstack.png" alt="Models" class="image fit">
+					</p>
+					<p> PyTorch DistributedDataParallel (DDP) was part of our tech stack to enable multi-GPU training.
+					</p>
+				</section>
+
+			</div>
+		<!-- Footer -->
+			<footer id="footer">
+				<div>
+					<ul class="icons">
+						<li><a href="https://github.com/jeraldhan92" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/jerald-han-wl/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="index.html" class="icon solid fa-home"><span class="label">Home</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

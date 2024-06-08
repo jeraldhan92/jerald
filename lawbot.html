@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jerald Han (Projects)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+        <!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="image avatar"><img src="images/avatar_face.png" alt="" /></a>
+					<h1><strong>Lawbot</strong></h1>
+					Projects<br />
+					<!-- responsive site template freebie<br />
+					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1> -->
+				</div>
+			</header>
+
+        <!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+							<h2>Project Description</h2>
+							<p>Everyone needs to understand the law to know their rights and responsibilities as a worker or an employer,
+								but legislation can be incredibly difficult to navigate. Besides legislation, there can be supporting codes of practice and guidelines that are also legally binding. 
+								This makes it daunting and time-consuming for people to understand what they really have to do.</p>
+							
+							<p> This was the motivation behind Lawbot -- a mini-project my AI Apprenticeship Program teammates and I worked on. It is
+								a conversational AI application designed to assist users with legal inquiries, providing information, guidance, and answers to common legal questions. </p>
+					</section>
+
+				<!-- Two -->
+				<section id="two">
+					<h2>Tech Stack</h2>
+					<p>
+						<img src="../images/fulls/lawbot_techstack.png" alt="Tech Stack" class="image fit">
+					</p>
+					<p> The chatbot's frontend is powered by Streamlit within a dockerized container. The backend is powered by FastAPI calling on Langchain-OpenAI to process the user's profile and input questions. 
+						A network bridge is set up between the two docker containers. </p>
+				</section>
+
+				<!-- Three -->
+				<section id="three">
+					<h2>Workflow</h2>
+					<p>
+						<img src="../images/fulls/lawbot_flow.png" alt="Workflow" class="image fit">
+					</p>
+					<p>
+						Our chatbot has two main components: Personalized Retrieval and Question Answering. When the user keys in important demographic information such as their age, employment status, occupation and industry, our model would generate a list of questions to help people who need some guidance to a starting point.
+					</p>
+					<p>
+						The user can either select a question from the list generated, or key in their own question. The question is then passed to the Question Answering model, which would generate an answer based on the user's input.
+					</p>
+				</section>
+
+				<!-- Four -->
+				<section id="four">
+					<h2>Applications</h2>
+					<p>
+						The model uses RAG to parse through uploaded documents within the database to locate chunks of the document that are most relevant to the user's question before packaging the information into a coherent answer that the user will see. 
+						After verifying our model's ability to process labour queries pertaining to manpower legislation and employment norms from legal guides, I experimented with more complex and specific legislation.
+						</p>
+					<p>
+						In my days as a civil engineer, we often had to navigate the complex Building Control Act, Building Control Regulations and various codes of practice from the different authorities. I had always dreamed of a more custom and efficient way of searching the documents in my line of work and when I was struggling to study for the Professional Engineer's Examination (PPE) which I eventually passed, thank goodness.
+						</p>
+					<p>
+						In the images below, you can see that specific regulations regarding site practices and manpower requirements on site were fed to the chatbot, and the answers returned were rather accurate. 
+					</p>
+
+					<p>
+						<img src="../images/fulls/lawbot_cons1.png" alt="Construction Questions" class="image fit thumb">
+					</p>
+
+					<p>
+						<img src="../images/fulls/lawbot_cons2.png" alt="Construction Questions" class="image small">
+					</p>
+			
+				</section>
+			</div>
+		<!-- Footer -->
+			<footer id="footer">
+				<div>
+					<ul class="icons">
+						<li><a href="https://github.com/jeraldhan92" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/jerald-han-wl/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="index.html" class="icon solid fa-home"><span class="label">Home</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
